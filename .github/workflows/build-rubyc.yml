@@ -27,8 +27,6 @@ jobs:
           rvm install "ruby-2.7.1"
           gem install bundler
           bundle install
-      - name: Build rubyc
-        run:
           bundle exec rake rubyc
           mv rubyc rubyc-linux-x64
           gzip rubyc-linux-x64     
