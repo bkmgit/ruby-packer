@@ -1,9 +1,13 @@
-name: Update data
-# based on https://github.com/stevenliuyi/covid19/blob/master/.github/workflows/datasest_updates.yml
+# based on 
+# https://github.com/stevenliuyi/covid19/blob/master/.github/workflows/datasest_updates.yml
+# https://github.com/actions/upload-release-asset
 on:
   push:
     branches:
       - master
+
+name: Build executable
+
 jobs:
   build:
     runs-on: ubuntu-latest
